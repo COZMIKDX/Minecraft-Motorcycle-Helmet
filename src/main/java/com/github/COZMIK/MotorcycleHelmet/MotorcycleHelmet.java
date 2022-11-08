@@ -49,8 +49,8 @@ public class MotorcycleHelmet
         MinecraftForge.EVENT_BUS.register(this);
 
         // I think this is adding my deferred register into the event bus, not the other way around.
-        ModItems.register(eventBus);
-        ModBlocks.register(eventBus);
+        ModItems.register(eventBus); // Add my custom items
+        ModBlocks.register(eventBus); // and my custom blocks.
     }
 
     private void setup(final FMLCommonSetupEvent event)
