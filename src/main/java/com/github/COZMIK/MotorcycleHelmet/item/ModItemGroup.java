@@ -18,7 +18,7 @@ public class ModItemGroup {
     //
     public static final ItemGroup TUTORIAL_MOD = new ItemGroup("tutorialModTab") {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack makeIcon() {
             // not totally sure what this function does at the moment.
 
             // The return stuff here specifies the icon on the tab.

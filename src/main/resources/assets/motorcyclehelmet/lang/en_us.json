@@ -5,5 +5,9 @@
 
   "block.motorcyclehelmet.amethyst_ore": "Amethyst Ore",
 
-  "item.motorcyclehelmet.amethyst_knife": "Amethyst Knife"
+  "item.motorcyclehelmet.amethyst_knife": "Amethyst Knife",
+
+  "item.motorcyclehelmet.firestone": "Firestone",
+
+  "item.motorcyclehelmet.waterwand": "Waterwand"
 }

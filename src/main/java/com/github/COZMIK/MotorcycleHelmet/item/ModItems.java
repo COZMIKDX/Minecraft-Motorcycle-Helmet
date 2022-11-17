@@ -1,6 +1,8 @@
 package com.github.COZMIK.MotorcycleHelmet.item;
 
 import com.github.COZMIK.MotorcycleHelmet.MotorcycleHelmet;
+import com.github.COZMIK.MotorcycleHelmet.item.custom.Firestone;
+import com.github.COZMIK.MotorcycleHelmet.item.custom.Waterwand;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
@@ -23,8 +25,10 @@ public class ModItems {
     // public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst", () -> new Item(new Item.Properties().group(ItemGroup.MATERIALS)));
     // I think this is adding the amethyst to the deferred register and returning a registry object.
     // I don't use AMETHYST yet...
-    public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst", () -> new Item(new Item.Properties().group(ModItemGroup.TUTORIAL_MOD)));
-    public static final RegistryObject<Item> AMETHYST_KNIFE = ITEMS.register("amethyst_knife", () -> new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)));
+    public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst", () -> new Item(new Item.Properties().tab(ModItemGroup.TUTORIAL_MOD)));
+    public static final RegistryObject<Item> AMETHYST_KNIFE = ITEMS.register("amethyst_knife", () -> new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).tab(ItemGroup.TAB_COMBAT)));
+    public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone", () -> new Firestone(new Item.Properties().tab(ModItemGroup.TUTORIAL_MOD).durability(8)));
+    public static final RegistryObject<Item> WATERWAND = ITEMS.register("waterwand", () -> new Waterwand(new Item.Properties().tab(ModItemGroup.TUTORIAL_MOD).durability(32)));
 
     // Called in MotorcycleHelmet constructor/
     // Makes sure the new items this mod adds are registered so minecraft can use them.
